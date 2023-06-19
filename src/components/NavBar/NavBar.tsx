@@ -5,27 +5,27 @@ export function NavBar() {
     return (
         <header>
             <nav className="navigation">
-                <List
-                    orientation="horizontal"
-                    sx={{
-                        bgcolor: "background.body",
-                        borderRadius: "4px",
-                        maxWidth: "fit-content",
-                        "--ListItem-radius": "8px",
-                    }}
-                >
+                <List orientation="horizontal">
                     <ListItem>
-                        <NextLink href="/dashboard" legacyBehavior passHref>
-                            <Link color="primary" variant="solid">
+                        <NextLink href="/dashboard">
+                            <Link
+                                color="primary"
+                                variant="solid"
+                                component="button"
+                            >
                                 Dashboard
                             </Link>
                         </NextLink>
                     </ListItem>
 
                     <ListItem>
-                        <NextLink href="/signout" legacyBehavior passHref>
-                            <Link color="neutral" variant="solid">
-                                Sign off
+                        <NextLink href="/signout">
+                            <Link
+                                color="neutral"
+                                variant="solid"
+                                component="button"
+                            >
+                                Sign out
                             </Link>
                         </NextLink>
                     </ListItem>
