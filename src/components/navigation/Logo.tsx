@@ -3,12 +3,8 @@ import logo from "/assets/wallet.svg";
 
 export const Logo = () => {
     return (
-        <Image
-            src={logo}
-            width={40}
-            height={40}
-            alt="Logo"
-            className="filter-white"
-        />
+        <div className="filter-white">
+            <Image src={logo} width={40} height={40} alt="Logo" />
+        </div>
     );
 };
